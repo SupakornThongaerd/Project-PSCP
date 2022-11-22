@@ -8,6 +8,6 @@ while True:
     if cv2.waitKey(1) & 0x0FF == ord("q"):
         cv2.imwrite("photo%d.png" %total, image)
         total += 1
-    if total == 5:
+    if cv2.waitKey(1) & 0x0FF == ord("d"):
         break
 cv2.destroyWindow()
